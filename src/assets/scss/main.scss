@@ -1,0 +1,57 @@
+@import "@/assets/scss/reset.scss";
+@import '@/index.css';
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+
+$blue: #183D9C;
+$blue2: #eceff6;
+$blue3: #dee7fe;
+$base: #272e3f;
+$font: #333333;
+$fontSub: #b6b8bd;
+$orange: #ffbe61;
+$white: #ffff;
+$hr: rgb(0 76 146 / 10%);
+
+body {
+  font-family: "Noto Sans KR", "Noto Sans", "Roboto", sans-serif;
+  color: $font;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  overflow-y: scroll;
+}
+.inner{
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header{
+  width: 100%;
+  z-index: 10000;
+  display: flex;
+  padding: 0 20px;
+  background-color: $white;
+  filter: drop-shadow(0px 4px 4px rgba(39, 46, 63, 0.05));
+  .inner{
+    height: 81px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+.menu_wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+}
