@@ -122,7 +122,7 @@
             <label for="">가입경력<span class="sprite question"></span></label>
             <select name="" id="" class="" required>
               <option value="" disabled>선택</option>
-              <option value="1년 미만">1년 미만</option>
+              <option value="1년 미만">1년 미만</option> 
               <option value="2년 미만">2년 미만</option>
               <option value="3년 미만">3년 미만</option>
               <option value="3년 이상">3년 이상</option>
