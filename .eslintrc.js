@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     // vue
-    'plugin:vue/vue3-strongly-recommended',
+    'plugin:vue/vue3-essential',
     // js
     'eslint:recommended'
   ],
@@ -13,15 +13,18 @@ module.exports = {
     parser: 'babel-eslint'
   },
   rules: {
+    "vue/comment-directive": ["error", {
+      "reportUnusedDisableDirectives": false 
+    }],
     "vue/html-closing-bracket-newline": ["error", {
       "singleline": "never",
-      "multiline": "never" // default값은 "always"
+      "multiline": "always" // default값은 "always"
     }],
     "vue/html-self-closing": ["error", {
       "html": {
-        "void": "never", // default값은 "never"
-        "normal": "never", // default값은 "always"
-        "component": "always"
+        "void": "any", // default값은 "never"
+        "normal": "any", // default값은 "always"
+        "component": "any"
       },
       "svg": "always",
       "math": "always"

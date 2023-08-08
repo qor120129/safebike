@@ -1,14 +1,14 @@
 <template>
   <header>
-    <nav class="inner flex justify-between">
+    <nav class="container d-flex align-items-center justify-content-between">
       <router-link to="/"><img src="@/assets/img/logo.png" alt="logo"></router-link>
-      <ul class="">
+      <ul class="d-flex gap-4">
         <li><router-link to="/">나의계약</router-link></li>
         <li><router-link to="/about">사고/보상</router-link></li>
         <li><router-link to="/about">알림</router-link></li>
         <li><router-link to="/about">인증센터</router-link></li>
       </ul>
-  </nav>
+    </nav>
   </header>
   <router-view />
   <footer>
