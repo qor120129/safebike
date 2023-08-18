@@ -18,7 +18,7 @@ module.exports = {
     }],
     "vue/html-closing-bracket-newline": ["error", {
       "singleline": "never",
-      "multiline": "always" // default값은 "always"
+      "multiline": "never" // default값은 "always"
     }],
     "vue/html-self-closing": ["error", {
       "html": {
@@ -31,6 +31,7 @@ module.exports = {
     }],
     "vue/multi-word-component-names": ["error", {
       "ignores": []
-    }]
+    }],
+    "vue/multi-word-component-names": 'off'
   }
 }

@@ -2,12 +2,11 @@
   <header>
     <nav class="container d-flex align-items-center justify-content-between">
       <router-link to="/"><img src="@/assets/img/logo.png" alt="logo"></router-link>
-      <ul class="d-flex gap-4">
-        <li><router-link to="/">나의계약</router-link></li>
-        <li><router-link to="/about">사고/보상</router-link></li>
-        <li><router-link to="/about">알림</router-link></li>
-        <li><router-link to="/about">인증센터</router-link></li>
-      </ul>
+      <div class="d-flex gap-4">
+        <div v-for="item in navigations" :key="item.name">
+          <router-link :to="item.href">{{ item.name }}</router-link>
+        </div>
+      </div>
     </nav>
   </header>
   <router-view />
@@ -27,3 +26,29 @@
     </div>
   </footer>
 </template>
+<script>
+  export default {
+    data() {
+      return {
+        navigations: [
+          {
+            name: '나의계약',
+            href: '/contract'
+          },
+          {
+            name: '사고/보상',
+            href: '/accidentCompensation'
+          },
+          {
+            name: '알림',
+            href: '/notification'
+          },
+          {
+            name: '인증센터',
+            href: '/certificationCenter'
+          }
+        ]
+      }
+    }
+  }
+</script>
